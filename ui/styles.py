@@ -73,6 +73,57 @@ MAIN_STYLE = """
         border: 1px solid #d0d3d8;
     }
     
+    /* ===== AI TOOLBAR ===== */
+    QToolBar[class="ai-toolbar"] {
+        background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+            stop:0 #e8f0fe, stop:1 #d2e3fc);
+        border: none;
+        border-bottom: 1px solid #c5d5ea;
+        padding: 3px 10px;
+        min-height: 35px;
+        spacing: 5px;
+    }
+    
+    QToolBar[class="ai-toolbar"]::separator {
+        width: 2px;
+        background: #c5d5ea;
+        margin: 4px 8px;
+    }
+    
+    QToolBar[class="ai-toolbar"] QToolButton {
+        background-color: transparent;
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 11px;
+        color: #1a3a6a;
+    }
+    
+    QToolBar[class="ai-toolbar"] QToolButton:hover {
+        background-color: #c5d5ea;
+    }
+    
+    QToolBar[class="ai-toolbar"] QToolButton:pressed {
+        background-color: #b0c4de;
+    }
+    
+    QToolBar[class="ai-toolbar"] QLabel {
+        color: #1a3a6a;
+        font-weight: 600;
+        font-size: 12px;
+        padding: 0 5px;
+    }
+    
+    QToolBar[class="ai-toolbar"] QLabel[class="privacy-badge"] {
+        color: #1a7a3a;
+        font-weight: bold;
+        margin-left: 10px;
+        padding: 2px 10px;
+        background-color: #d4edda;
+        border-radius: 12px;
+        border: 1px solid #28a745;
+    }
+    
     /* ===== MODERN STATUS BAR ===== */
     QStatusBar {
         background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
@@ -95,6 +146,11 @@ MAIN_STYLE = """
     
     QStatusBar QLabel:last-child {
         border-right: none;
+    }
+    
+    QStatusBar QLabel[class="privacy-badge"] {
+        color: #28a745;
+        font-weight: bold;
     }
     
     /* ===== SIDEBAR ===== */
@@ -625,6 +681,24 @@ DARK_THEME = """
     
     QToolBar QToolButton:hover {
         background-color: #3d3d5a;
+    }
+    
+    QToolBar[class="ai-toolbar"] {
+        background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+            stop:0 #1a2a4a, stop:1 #2a3a5a);
+        border-bottom: 1px solid #3a4a6a;
+    }
+    
+    QToolBar[class="ai-toolbar"] QToolButton {
+        color: #a0c0e0;
+    }
+    
+    QToolBar[class="ai-toolbar"] QToolButton:hover {
+        background-color: #3a4a6a;
+    }
+    
+    QToolBar[class="ai-toolbar"] QLabel {
+        color: #a0c0e0;
     }
     
     QStatusBar {
