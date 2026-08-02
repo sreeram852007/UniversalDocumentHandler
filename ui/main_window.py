@@ -1031,7 +1031,7 @@ class MainWindow(QMainWindow):
         layout.addLayout(button_layout)
         
         dialog.setLayout(layout)
-        dialog.exec_()
+        dialog.exec()
     
     def _generate_summary(self, display_widget, text, type_combo):
         """Generate summary based on selected type"""
@@ -1112,7 +1112,7 @@ class MainWindow(QMainWindow):
         layout.addLayout(button_layout)
         
         dialog.setLayout(layout)
-        dialog.exec_()
+        dialog.exec()
     
     def _perform_translation(self, display_widget, text, lang_combo):
         """Perform translation"""
@@ -1191,7 +1191,7 @@ class MainWindow(QMainWindow):
         layout.addLayout(button_layout)
         
         dialog.setLayout(layout)
-        dialog.exec_()
+        dialog.exec()
     
     def _apply_corrections(self, corrected_text):
         """Apply grammar corrections"""
@@ -1257,7 +1257,7 @@ class MainWindow(QMainWindow):
         layout.addLayout(button_layout)
         
         dialog.setLayout(layout)
-        dialog.exec_()
+        dialog.exec()
     
     def _perform_search(self, query, text, results_list):
         """Perform smart search"""
@@ -1341,7 +1341,7 @@ class MainWindow(QMainWindow):
         layout.addLayout(button_layout)
         
         dialog.setLayout(layout)
-        dialog.exec_()
+        dialog.exec()
     
     def _perform_cross_convert(self, format_combo, name_edit):
         """Perform cross-format conversion"""
@@ -1442,7 +1442,7 @@ class MainWindow(QMainWindow):
         layout.addLayout(button_layout)
         
         dialog.setLayout(layout)
-        dialog.exec_()
+        dialog.exec()
     
     def _toggle_anonymous(self):
         """Toggle anonymous mode"""
