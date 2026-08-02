@@ -1,0 +1,48 @@
+﻿# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Build files
+build/
+dist/
+*.spec
+*.exe
+*.msi
+*.dmg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.db
+*.sqlite
+
+# Temporary files
+*.tmp
+*.temp
+
+# PyInstaller
+*.pyz
+*.toc
+*.pkg
+warn-*.txt
+xref-*.html
+base_library.zip
+localpycs/
